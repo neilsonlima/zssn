@@ -3,11 +3,11 @@ const router = require("./routes");
 
 app.use(router);
 
-const db = require("./config/database");
+//const db = require("./config/database");
 
-db.authenticate()
-  .then(() => console.log('Database connected...'))
-  .catch( err => console.log('Unable to connect to the database:', err));
+//db.authenticate()
+//  .then(() => console.log('Database connected...'))
+//  .catch( err => console.log('Unable to connect to the database:', err));
 
 const PORT = process.env.PORT || 5000;
 
